@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="termsandconditionsVM" type="com.mygitsynctest.app.modules.termsandconditions.data.viewmodel.TermsandconditionsVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linear"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <LinearLayout android:id="@+id/linear1"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_32px"
+            android:layout_marginTop="@dimen/_59px"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700">
+            <ImageView android:id="@+id/image"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_60px"
+                android:layout_width="@dimen/_60px" imageRes="@{@drawable/img_group_32}"/>
+            <TextView android:gravity="top|start"
+                android:id="@+id/txtTermsAndCondi"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_28px"
+                android:layout_width="match_parent"
+                android:text="@{termsandconditionsVM.termsandconditionsModel.txtTermsAndCondi}" style="@style/textStylePoppinssemibold28"/>
+        </LinearLayout>
+        <TextView android:gravity="top|start"
+            android:id="@+id/txtLoremIpsumDol"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_32px"
+            android:layout_marginTop="@dimen/_60px"
+            android:layout_width="match_parent"
+            android:text="@{termsandconditionsVM.termsandconditionsModel.txtLoremIpsumDol}" style="@style/textStylePoppinsregular12"/>
+    </LinearLayout>
+</layout>

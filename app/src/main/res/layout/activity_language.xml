@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="languageVM" type="com.mygitsynctest.app.modules.language.data.viewmodel.LanguageVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linear"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <ImageView android:id="@+id/image"
+            android:layout_gravity="start"
+            android:layout_height="@dimen/_60px"
+            android:layout_marginStart="@dimen/_32px"
+            android:layout_marginTop="@dimen/_52px"
+            android:layout_width="@dimen/_60px" imageRes="@{@drawable/img_group_32}"/>
+        <LinearLayout android:id="@+id/linear1"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_32px"
+            android:layout_marginTop="@dimen/_35px"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStyle">
+            <TextView android:gravity="top|start"
+                android:id="@+id/txtLanguage"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@{languageVM.languageModel.txtLanguage}" style="@style/textStylePoppinssemibold28"/>
+            <TextView android:gravity="top|start"
+                android:id="@+id/txtYourSettingsS"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12px"
+                android:layout_width="match_parent"
+                android:text="@{languageVM.languageModel.txtYourSettingsS}" style="@style/textStylePoppinsmedium12"/>
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:gravity="center" android:id="@+id/btnIndonesian"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_32px"
+            android:layout_marginStart="@dimen/_32px"
+            android:layout_marginTop="@dimen/_80px"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_21px"
+            android:paddingEnd="@dimen/_30px"
+            android:paddingStart="@dimen/_30px"
+            android:paddingTop="@dimen/_21px"
+            android:text="@string/lbl_indonesian" style="@style/textStylePoppinsmedium12_2"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:gravity="center" android:id="@+id/btnEnglish"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_32px"
+            android:layout_marginStart="@dimen/_32px"
+            android:layout_marginTop="@dimen/_14px"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_21px"
+            android:paddingEnd="@dimen/_30px"
+            android:paddingStart="@dimen/_30px"
+            android:paddingTop="@dimen/_21px"
+            android:text="@string/lbl_english" style="@style/textStylePoppinsmedium12_3"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:gravity="center" android:id="@+id/btnSave"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_32px"
+            android:layout_marginStart="@dimen/_32px"
+            android:layout_marginTop="@dimen/_80px"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_19px"
+            android:paddingEnd="@dimen/_30px"
+            android:paddingStart="@dimen/_30px"
+            android:paddingTop="@dimen/_17px"
+            android:text="@string/lbl_save" style="@style/textStylePoppinssemibold16_1"/>
+    </LinearLayout>
+</layout>

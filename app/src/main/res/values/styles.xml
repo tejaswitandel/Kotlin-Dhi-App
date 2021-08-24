@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <style name="groupStyledeep_purple_A400_5ecornerRadius">
+        <item name="android:background">@drawable/rectangle_bg_deep_purple_a400_5e_radius_14</item>
+    </style>
+    <style name="textStylePoppinssemibold20" parent="textStylePoppinssemibold28">
+        <item name="android:textSize">@dimen/_20px</item>
+    </style>
+    <style name="textStylePoppinssemibold18" parent="textStylePoppinssemibold18_2">
+        <item name="android:textColor">@color/gray_50</item>
+        <item name="android:textFontWeight">600</item>
+    </style>
+    <style name="textStylePoppinsmedium14_2" parent="textStylePoppinsregular14">
+        <item name="android:textFontWeight">500</item>
+    </style>
+    <style name="textStylePoppinsmedium12_4" parent="textStylePoppinssemibold12">
+        <item name="android:textFontWeight">500</item>
+    </style>
+    <style name="textStylePoppinsmedium14_3" parent="textStylePoppinsmedium14_2">
+        <item name="android:textSize">@dimen/_14px</item>
+        <item name="android:textColor">@color/black_900</item>
+        <item name="android:fontFamily">@font/poppins</item>
+    </style>
+    <style name="textStylePoppinsmedium16" parent="textStylePoppinsmedium16_2">
+        <item name="android:textColor">@color/deep_orange_500</item>
+    </style>
+    <style name="textStylePoppinsmedium16_1" parent="textStylePoppinsmedium16_2">
+        <item name="android:textColor">@color/deep_purple_A400</item>
+    </style>
+    <style name="textStylePoppinsmedium12_2" parent="textStylePoppinsmedium12_4">
+        <item name="android:textSize">@dimen/_12px</item>
+        <item name="android:textColor">@color/deep_orange_500</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:background">@drawable/rectangle_bg_deep_orange_500_5e_radius_14</item>
+    </style>
+    <style name="textStylePoppinsmedium14_1" parent="textStylePoppinsmedium14">
+        <item name="android:textColor">@color/deep_orange_500</item>
+        <item name="android:background">@drawable/rectangle_bg_deep_orange_500_63_radius_14</item>
+    </style>
+    <style name="textStylePoppinsmedium12_3" parent="textStylePoppinsmedium12_1">
+        <item name="android:textColor">@color/deep_purple_A400</item>
+        <item name="android:background">@drawable/rectangle_bg_deep_purple_a400_5e_radius_14</item>
+    </style>
+    <style name="textStylePoppinsmedium12" parent="textStylePoppinsregular12">
+        <item name="android:textFontWeight">500</item>
+    </style>
+    <style name="textStylePoppinsmedium12_1" parent="textStylePoppinsmedium12">
+        <item name="android:textSize">@dimen/_12px</item>
+        <item name="android:textColor">@color/gray_900</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:background">@drawable/rectangle_bg_gray_50_radius_14</item>
+    </style>
+    <style name="textStylePoppinsregular12_1" parent="textStylePoppinsregular12">
+        <item name="android:textColor">@color/black_900</item>
+    </style>
+    <style name="textStylePoppinssemibold16">
+        <item name="android:textSize">@dimen/_16px</item>
+        <item name="android:textColor">@color/black_900</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textFontWeight">600</item>
+    </style>
+    <style name="textStylePoppinsmedium14" parent="textStylePoppinssemibold16_1">
+        <item name="android:textSize">@dimen/_14px</item>
+        <item name="android:textColor">@color/white_A700</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textFontWeight">500</item>
+    </style>
+    <style name="textStylePoppinsmedium16_2">
+        <item name="android:textSize">@dimen/_16px</item>
+        <item name="android:textColor">@color/light_blue_400</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textFontWeight">500</item>
+        <item name="android:background">@drawable/rectangle</item>
+    </style>
+    <style name="groupStylewhite_A700">
+        <item name="android:background">@drawable/rectangle_bg_white_a700</item>
+    </style>
+    <style name="groupStylelight_blue_400_5ecornerRadius">
+        <item name="android:background">@drawable/rectangle_bg_light_blue_400_5e_radius_14</item>
+    </style>
+    <style name="textStylePoppinssemibold18_1" parent="textStylePoppinsregular18">
+        <item name="android:textFontWeight">600</item>
+    </style>
+    <style name="textStylePoppinssemibold16_2" parent="textStylePoppinssemibold16_1">
+        <item name="android:textColor">@color/red_A400</item>
+        <item name="android:background">@drawable/rectangle_bg_red_a400_0c_border_red_a400_radius_14</item>
+    </style>
+    <style name="textStylePoppinssemibold16_1" parent="textStylePoppinssemibold18_2">
+        <item name="android:textSize">@dimen/_16px</item>
+        <item name="android:background">@drawable/rectangle_bg_light_blue_400_radius_14</item>
+    </style>
+    <style name="textStylePoppinsbold34">
+        <item name="android:textSize">@dimen/_34px</item>
+        <item name="android:textColor">@color/gray_900</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textFontWeight">700</item>
+    </style>
+    <style name="textStylePoppinssemibold12">
+        <item name="android:textSize">@dimen/_12px</item>
+        <item name="android:textColor">@color/deep_orange_500</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textFontWeight">600</item>
+    </style>
+    <style name="textStylePoppinssemibold18_2" parent="textStylePoppinssemibold18_1">
+        <item name="android:textSize">@dimen/_18px</item>
+        <item name="android:textColor">@color/white_A700</item>
+        <item name="android:fontFamily">@font/poppins</item>
+    </style>
+    <style name="groupStylewhite_A700_7e">
+        <item name="android:background">@drawable/rectangle_bg_white_a700_7e</item>
+    </style>
+    <style name="textStylePoppinssemibold28" parent="textStylePoppinssemibold18_1">
+        <item name="android:textSize">@dimen/_28px</item>
+        <item name="android:textColor">@color/gray_900</item>
+        <item name="android:fontFamily">@font/poppins</item>
+    </style>
+    <style name="textStylePoppinsregular18" parent="textStylePoppinsregular14">
+        <item name="android:textSize">@dimen/_18px</item>
+    </style>
+    <style name="groupStyledeep_orange_500_5ecornerRadius">
+        <item name="android:background">@drawable/rectangle_bg_deep_orange_500_5e_radius_14</item>
+    </style>
+    <style name="textStylePoppinsregular10" parent="textStylePoppinsregular14">
+        <item name="android:textSize">@dimen/_10px</item>
+    </style>
+    <style name="groupStylegray_50">
+        <item name="android:background">@drawable/rectangle_bg_gray_50</item>
+    </style>
+    <style name="groupStyle">
+        <item name="android:background">@drawable/rectangle</item>
+    </style>
+    <style name="textStylePoppinsregular12" parent="textStylePoppinsregular14">
+        <item name="android:textSize">@dimen/_12px</item>
+    </style>
+    <style name="textStylePoppinsregular14">
+        <item name="android:textSize">@dimen/_14px</item>
+        <item name="android:textColor">@color/gray_900</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textFontWeight">400</item>
+    </style>
+</resources>

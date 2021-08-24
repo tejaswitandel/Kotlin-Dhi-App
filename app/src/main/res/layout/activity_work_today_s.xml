@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="workTodaySVM" type="com.mygitsynctest.app.modules.worktodays.data.viewmodel.WorkTodaySVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linear"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_9px" android:layout_width="match_parent">
+            <LinearLayout android:id="@+id/linear1"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStyle">
+                <ImageView android:id="@+id/image"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/_60px"
+                    android:layout_width="@dimen/_67px" imageRes="@{@drawable/img_group_103}"/>
+                <TextView android:gravity="top|start"
+                    android:id="@+id/txtWorkTodayS"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_50px"
+                    android:layout_weight="0.69"
+                    android:layout_width="0dp"
+                    android:text="@{workTodaySVM.workTodaySModel.txtWorkTodayS}" style="@style/textStylePoppinssemibold18_2"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <androidx.core.widget.NestedScrollView
+            android:clipToPadding="false" android:fillViewport="true"
+            android:id="@+id/scrollView" android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_10px"
+            android:paddingEnd="@dimen/_30px" android:paddingStart="@dimen/_30px">
+            <LinearLayout android:id="@+id/linear2"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylewhite_A700">
+                <LinearLayout android:id="@+id/linear3"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_22px"
+                    android:layout_marginTop="@dimen/_37px"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStyle">
+                    <TextView android:gravity="top|start"
+                        android:id="@+id/txtWorkTodayS1"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="@{workTodaySVM.workTodaySModel.txtWorkTodayS1}" style="@style/textStylePoppinssemibold28"/>
+                    <TextView android:gravity="top|start"
+                        android:id="@+id/txtMakeYourJobE"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_11px"
+                        android:layout_width="match_parent"
+                        android:text="@{workTodaySVM.workTodaySModel.txtMakeYourJobE}" style="@style/textStylePoppinsmedium12"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linear4"
+                    android:layout_gravity="end"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_79px"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <LinearLayout android:id="@+id/linear5"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.32"
+                        android:layout_width="0dp"
+                        android:orientation="vertical" style="@style/groupStyle">
+                        <TextView android:gravity="top|start"
+                            android:id="@+id/txtToday"
+                            android:layout_gravity="start"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:text="@{workTodaySVM.workTodaySModel.txtToday}" style="@style/textStylePoppinsmedium14_3"/>
+                        <TextView android:gravity="top|start"
+                            android:id="@+id/txt02April2021"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_4px"
+                            android:layout_width="match_parent"
+                            android:text="@{workTodaySVM.workTodaySModel.txt02April2021}" style="@style/textStylePoppinssemibold16"/>
+                    </LinearLayout>
+                    <ImageView android:id="@+id/image1"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_58px"
+                        android:layout_marginStart="@dimen/_50px"
+                        android:layout_width="@dimen/_60px" imageRes="@{@drawable/img_group_56}"/>
+                </LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_22px"
+                    android:layout_marginTop="@dimen/_59px"
+                    android:layout_width="match_parent"
+                    android:nestedScrollingEnabled="false"
+                    android:orientation="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:itemCount="2" tools:listitem="@layout/row_work_today_s1"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:clickable="true"
+                    android:gravity="top|center"
+                    android:id="@+id/btnMakeAWishLis"
+                    android:layout_gravity="end"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_69px"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_19px"
+                    android:paddingEnd="@dimen/_30px"
+                    android:paddingStart="@dimen/_30px"
+                    android:paddingTop="@dimen/_19px"
+                    android:text="@string/msg_make_a_wish_lis" style="@style/textStylePoppinssemibold16_1"/>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</layout>

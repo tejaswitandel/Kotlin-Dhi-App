@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="loginSignupVM" type="com.mygitsynctest.app.modules.loginsignup.data.viewmodel.LoginSignupVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linear"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_50">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_25px"
+            android:layout_marginStart="@dimen/_25px"
+            android:layout_marginTop="@dimen/_21px" android:layout_width="match_parent">
+            <LinearLayout android:id="@+id/linear1"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStyle">
+                <ImageView android:id="@+id/image"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/_60px"
+                    android:layout_width="@dimen/_67px" imageRes="@{@drawable/img_group_103}"/>
+                <TextView android:gravity="top|start"
+                    android:id="@+id/txtWorksTodays"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_50px"
+                    android:layout_weight="0.71"
+                    android:layout_width="0dp"
+                    android:text="@{loginSignupVM.loginSignupModel.txtWorksTodays}" style="@style/textStylePoppinssemibold18"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <ScrollView android:clipToPadding="false"
+            android:fillViewport="true" android:id="@+id/scrollView"
+            android:layout_height="0dp" android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_10px"
+            android:paddingEnd="@dimen/_30px" android:paddingStart="@dimen/_30px">
+            <LinearLayout android:id="@+id/linear2"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylegray_50">
+                <FrameLayout android:id="@+id/frame"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_32px"
+                    android:layout_marginStart="@dimen/_32px"
+                    android:layout_width="match_parent" style="@style/groupStyle">
+                    <FrameLayout android:id="@+id/frame1"
+                        android:layout_gravity="center"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent" style="@style/groupStyle">
+                        <TextView android:gravity="top|start"
+                            android:id="@+id/txtWelcomeToOur"
+                            android:layout_gravity="center|start"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/_12px"
+                            android:layout_marginTop="@dimen/_27px"
+                            android:layout_width="match_parent"
+                            android:text="@{loginSignupVM.loginSignupModel.txtWelcomeToOur}" style="@style/textStylePoppinsbold34"/>
+                    </FrameLayout>
+                </FrameLayout>
+                <TextView android:gravity="top|start"
+                    android:id="@+id/txtOurCommunityI"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_32px"
+                    android:layout_marginStart="@dimen/_32px"
+                    android:layout_width="match_parent"
+                    android:text="@{loginSignupVM.loginSignupModel.txtOurCommunityI}" style="@style/textStylePoppinsregular12"/>
+                <ImageView android:id="@+id/image1"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="@dimen/_105px"
+                    android:layout_marginEnd="@dimen/_50px"
+                    android:layout_marginStart="@dimen/_50px"
+                    android:layout_marginTop="@dimen/_31px"
+                    android:layout_width="@dimen/_117px" imageRes="@{@drawable/img_group_38}"/>
+                <TextView android:gravity="top|center"
+                    android:id="@+id/txtGetInThrough"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_50px"
+                    android:layout_marginStart="@dimen/_50px"
+                    android:layout_marginTop="@dimen/_31px"
+                    android:layout_width="match_parent"
+                    android:text="@{loginSignupVM.loginSignupModel.txtGetInThrough}" style="@style/textStylePoppinssemibold18_1"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:clickable="true" android:gravity="center"
+                    android:id="@+id/btnSignUp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_32px"
+                    android:layout_marginStart="@dimen/_32px"
+                    android:layout_marginTop="@dimen/_35px"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_19px"
+                    android:paddingEnd="@dimen/_30px"
+                    android:paddingStart="@dimen/_30px"
+                    android:paddingTop="@dimen/_20px"
+                    android:text="@string/lbl_sign_up" style="@style/textStylePoppinsmedium14"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:clickable="true" android:gravity="center"
+                    android:id="@+id/btnLogin"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_32px"
+                    android:layout_marginStart="@dimen/_32px"
+                    android:layout_marginTop="@dimen/_14px"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_19px"
+                    android:paddingEnd="@dimen/_30px"
+                    android:paddingStart="@dimen/_30px"
+                    android:paddingTop="@dimen/_20px"
+                    android:text="@string/lbl_login" style="@style/textStylePoppinsmedium14_1"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="personalityVM" type="com.mygitsynctest.app.modules.personality.data.viewmodel.PersonalityVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linear"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar"
+            android:layout_height="wrap_content" android:layout_width="match_parent">
+            <LinearLayout android:id="@+id/linear1"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStyle">
+                <ImageView android:id="@+id/image"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/_60px"
+                    android:layout_width="@dimen/_60px" imageRes="@{@drawable/img_group_103_2}"/>
+                <TextView android:gravity="top|start"
+                    android:id="@+id/txtPersonality"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_50px"
+                    android:layout_weight="0.65"
+                    android:layout_width="0dp"
+                    android:text="@{personalityVM.personalityModel.txtPersonality}" style="@style/textStylePoppinssemibold18_1"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <ScrollView android:clipToPadding="false"
+            android:fillViewport="true" android:id="@+id/scrollView"
+            android:layout_height="0dp" android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_10px"
+            android:paddingEnd="@dimen/_30px" android:paddingStart="@dimen/_30px">
+            <LinearLayout android:id="@+id/linear2"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylewhite_A700">
+                <LinearLayout android:id="@+id/linear3"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_40px"
+                    android:layout_marginStart="@dimen/_40px"
+                    android:layout_marginTop="@dimen/_19px"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStyle">
+                    <ImageView android:id="@+id/image1"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_139px"
+                        android:layout_marginEnd="@dimen/_39px"
+                        android:layout_marginStart="@dimen/_39px"
+                        android:layout_width="@dimen/_139px"
+                        android:scaleType="centerCrop"
+                        circular="@{true}" imageRes="@{@drawable/img_11_1}"/>
+                    <LinearLayout android:id="@+id/linear4"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12px"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical" style="@style/groupStyle">
+                        <FrameLayout android:id="@+id/frame"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="match_parent" android:layout_width="match_parent">
+                            <FrameLayout android:id="@+id/frame1"
+                                android:layout_gravity="center"
+                                android:layout_height="@dimen/_33px" android:layout_width="@dimen/_102px"/>
+                            <TextView android:gravity="top|center"
+                                android:id="@+id/txtEditPhoto"
+                                android:layout_gravity="center"
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+                                android:text="@{personalityVM.personalityModel.txtEditPhoto}" style="@style/textStylePoppinsmedium12_4"/>
+                        </FrameLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linear5"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_41px"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStyle">
+                    <TextView android:gravity="top|start"
+                        android:id="@+id/txtUsername"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="@{personalityVM.personalityModel.txtUsername}" style="@style/textStylePoppinsmedium12"/>
+                    <EditText
+                        android:background="@drawable/rectangle_border_gray_900_radius_10"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center|start"
+                        android:hint="@string/lbl_adalahalcana"
+                        android:id="@+id/etAdalahalcana"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12px"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_19px"
+                        android:paddingStart="@dimen/_24px"
+                        android:paddingTop="@dimen/_20px"
+                        android:singleLine="true"
+                        android:text="@={personalityVM.personalityModel.etAdalahalcanaValue}"
+                        android:textColor="@color/gray_900"
+                        android:textColorHint="@color/gray_900"
+                        android:textFontWeight="500"
+                        android:textSize="@dimen/_14px" android:textStyle="bold"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linear6"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_18px"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStyle">
+                    <TextView android:gravity="top|start"
+                        android:id="@+id/txtFirstName"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="@{personalityVM.personalityModel.txtFirstName}" style="@style/textStylePoppinsmedium12"/>
+                    <EditText
+                        android:background="@drawable/rectangle_border_gray_900_radius_10"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center|start"
+                        android:hint="@string/lbl_alcanasatre"
+                        android:id="@+id/etAlcanasatre"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12px"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_19px"
+                        android:paddingStart="@dimen/_24px"
+                        android:paddingTop="@dimen/_20px"
+                        android:singleLine="true"
+                        android:text="@={personalityVM.personalityModel.etAlcanasatreValue}"
+                        android:textColor="@color/gray_900"
+                        android:textColorHint="@color/gray_900"
+                        android:textFontWeight="500"
+                        android:textSize="@dimen/_14px" android:textStyle="bold"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linear7"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_18px"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStyle">
+                    <TextView android:gravity="top|start"
+                        android:id="@+id/txtLastName"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="@{personalityVM.personalityModel.txtLastName}" style="@style/textStylePoppinsmedium12"/>
+                    <EditText
+                        android:background="@drawable/rectangle_border_gray_900_radius_10"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center|start"
+                        android:hint="@string/lbl_fourta"
+                        android:id="@+id/etFourta"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12px"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_19px"
+                        android:paddingStart="@dimen/_24px"
+                        android:paddingTop="@dimen/_20px"
+                        android:singleLine="true"
+                        android:text="@={personalityVM.personalityModel.etFourtaValue}"
+                        android:textColor="@color/gray_900"
+                        android:textColorHint="@color/gray_900"
+                        android:textFontWeight="500"
+                        android:textSize="@dimen/_14px" android:textStyle="bold"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linear8"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_18px"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStyle">
+                    <TextView android:gravity="top|start"
+                        android:id="@+id/txtHobby"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="@{personalityVM.personalityModel.txtHobby}" style="@style/textStylePoppinsmedium12"/>
+                    <EditText
+                        android:background="@drawable/rectangle_border_gray_900_radius_10"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center|start"
+                        android:hint="@string/lbl_sleep"
+                        android:id="@+id/etSleep"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12px"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_19px"
+                        android:paddingStart="@dimen/_24px"
+                        android:paddingTop="@dimen/_20px"
+                        android:singleLine="true"
+                        android:text="@={personalityVM.personalityModel.etSleepValue}"
+                        android:textColor="@color/gray_900"
+                        android:textColorHint="@color/gray_900"
+                        android:textFontWeight="500"
+                        android:textSize="@dimen/_14px" android:textStyle="bold"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linear9"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_18px"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStyle">
+                    <TextView android:gravity="top|start"
+                        android:id="@+id/txtDateOfBirth"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="@{personalityVM.personalityModel.txtDateOfBirth}" style="@style/textStylePoppinsmedium12"/>
+                    <EditText
+                        android:background="@drawable/rectangle_border_gray_900_radius_10"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center|start"
+                        android:hint="@string/lbl_28_may_2002"
+                        android:id="@+id/et28May2002"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12px"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_19px"
+                        android:paddingStart="@dimen/_24px"
+                        android:paddingTop="@dimen/_20px"
+                        android:singleLine="true"
+                        android:text="@={personalityVM.personalityModel.et28May2002Value}"
+                        android:textColor="@color/gray_900"
+                        android:textColorHint="@color/gray_900"
+                        android:textFontWeight="500"
+                        android:textSize="@dimen/_14px" android:textStyle="bold"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linear10"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_18px"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStyle">
+                    <TextView android:gravity="top|start"
+                        android:id="@+id/txtCountry"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="@{personalityVM.personalityModel.txtCountry}" style="@style/textStylePoppinsmedium12"/>
+                    <EditText
+                        android:background="@drawable/rectangle_border_gray_900_radius_10"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center|start"
+                        android:hint="@string/lbl_indonesian"
+                        android:id="@+id/etIndonesian"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12px"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_19px"
+                        android:paddingStart="@dimen/_24px"
+                        android:paddingTop="@dimen/_20px"
+                        android:singleLine="true"
+                        android:text="@={personalityVM.personalityModel.etIndonesianValue}"
+                        android:textColor="@color/gray_900"
+                        android:textColorHint="@color/gray_900"
+                        android:textFontWeight="500"
+                        android:textSize="@dimen/_14px" android:textStyle="bold"/>
+                </LinearLayout>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:gravity="center"
+                    android:id="@+id/btnChangeSave"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_34px"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_19px"
+                    android:paddingEnd="@dimen/_30px"
+                    android:paddingStart="@dimen/_30px"
+                    android:paddingTop="@dimen/_17px"
+                    android:text="@string/lbl_change_save" style="@style/textStylePoppinssemibold16_1"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>
