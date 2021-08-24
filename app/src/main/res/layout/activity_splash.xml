@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="splashVM" type="com.mygitsynctest.app.modules.splash.data.viewmodel.SplashVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frame"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <ImageView android:clickable="true" android:id="@+id/image"
+            android:layout_gravity="center"
+            android:layout_height="@dimen/_325px"
+            android:layout_marginBottom="@dimen/_80px"
+            android:layout_marginEnd="@dimen/_50px"
+            android:layout_marginStart="@dimen/_50px"
+            android:layout_marginTop="@dimen/_80px"
+            android:layout_width="@dimen/_238px"
+            android:scaleType="centerCrop" imageRes="@{@drawable/img_group_45_1}"/>
+    </FrameLayout>
+</layout>
